@@ -1,38 +1,85 @@
+body {
+	text-align: center;
+}
 .App {
-  text-align: center;
+	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headers {
+	display: flex;
+	width: 100%;
+	height: 70px;
+	margin: 0;
+	padding: 0;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	justify-content: space-around;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headers > div {
+	flex: 1;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.searchbox {
+	width: max-content;
+	padding: 14px;
+	border-radius: 28px;
+	display: flex;
+	justify-content: center;
+	background-color: #f6f6f6;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-input {
+	width: 300px;
+	margin-left: 14px;
+	padding: 4px 6px;
+	border: 0;
+	font-size: 16px;
+	outline: none;
+	background-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-icon {
+	color: rgba(0, 0, 0, 0.5);
+}
+.search-icon:hover {
+	cursor: pointer;
+}
+.display {
+	margin: 50px;
+}
+
+.prodList {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+}
+
+.cardItem {
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.image {
+	width: 200px;
+	height: 200px;
+}
+
+.paginate {
+	margin-top: 40px;
+}
+
+.toggleBtn {
+	padding: 12px 16px;
+	margin-top: 20px;
+	border-radius: 16px;
+	border: none;
+	background-color: teal;
+	color: aliceblue;
+	font-size: 16px;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+	cursor: pointer;
 }
